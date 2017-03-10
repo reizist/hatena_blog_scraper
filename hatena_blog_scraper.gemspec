@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "A client library for getting articles of HatenaBlog in Ruby."
   spec.description   = ""
   spec.homepage      = "https://github.com/reizist/hatena_blog_scraper"
+  spec.licenses      = %w(MIT)
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
