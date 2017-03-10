@@ -21,7 +21,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "nokogiri","~> 1.7"
-  spec.add_dependency "slop", "~> 4.0"
   spec.add_dependency "reverse_markdown", "~> 1.0"
   
   spec.add_development_dependency "bundler", "~> 1.13"
