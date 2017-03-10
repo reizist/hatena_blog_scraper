@@ -38,7 +38,7 @@ module HatenaBlogScraper
       html  = doc.xpath('//div[@class="entry-content"]').to_html
       title = doc.xpath('//h1[@class="entry-title"]').text.strip
       
-      Article.new(url: article_url, title: title, text: text)
+      Article.new(url: article_url, title: title, text: text, html: html)
     end
     
     def list_article_urls(page: 1)
