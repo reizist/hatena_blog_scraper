@@ -1,31 +1,19 @@
 はてなブログの記事内容を取得するGem.
 
-
 # Usage
 
-```rb
-hatenablog get http://reizist.hatenablog.com -c 10
+```ruby
+require "hatena_blog_scraper"
+HatenaBlogScraper.new(url: "http://reizist.hatenablog.com").list_articles(count: 2)
+
 => [
-     {
-       'http://reizist.hatenablog.com/entry/2017/03/03/044202' => {
-		 title: '',
-		 categories: [].
-		 text: '',
-		 html: ''
-	   }
-	 },
-	 {
-	   ..
-	 },
-	 ..
-   ]
-```
+  [#<HatenaBlogScraper::Article:0x007fe28d374c00
+    @url='',
+    @title='',
+    @html='',
+    @text='',
+    @markdown=''>, ...
+]
 
-## Options
+````
 
-* -c --count [Integer] count of getting article
-* -m --markdown [Boolean] also output markdown
-* -s --save [String] save dir
-    
-
-		
