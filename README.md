@@ -15,5 +15,8 @@ HatenaBlogScraper.new(url: "http://reizist.hatenablog.com").list_articles(count:
     @markdown=''>, ...
 ]
 
-````
+```
+
+
+also see: [はてなブログのガイドライン](http://help.hatenablog.com/entry/guideline#prohibition)
 
